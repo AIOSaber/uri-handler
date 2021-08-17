@@ -4,7 +4,7 @@ import subprocess
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        uri = sys.argv[1]
-        subprocess.run("~/.aiosaber/client/aiosaber-client --map-install " + uri, shell=True)
+        map = sys.argv[1]
+        subprocess.run("osascript -e 'tell application \"Terminal\" to do script \"~/.aiosaber/client/aiosaber-client --map-install " + map + "\"'", shell=True)
     else:
         print("Error: no url provided")
