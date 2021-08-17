@@ -21,7 +21,7 @@
             <string>com.apple.ScriptEditor.CustomURLScheme</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>edit</string>
+              <string>aiosaber</string>
             </array>
           </dict>
         </array>
