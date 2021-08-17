@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+import sys
+import subprocess
+
+if __name__ == "__main__":
+    if len(sys.argv) == 2:
+        uri = sys.argv[1]
+        subprocess.run("~/.aiosaber/client/aiosaber-client --map-install " + uri, shell=True)
+    else:
+        print("Error: no url provided")
