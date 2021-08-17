@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 import sys
 import subprocess
 
@@ -13,7 +13,7 @@ if __name__ == "__main__":
         contents = "".join(contents)
         f.write(contents)
         f.close()
-        subprocess.run("touch /Applications/uri-handler.app; cp handler_template " + protocol + ";", shell=True)
+        subprocess.run("touch /Applications/uri-handler.app;", shell=True)
         print("created new handler: (" + protocol + "), and added " + protocol + " to Info.plist file.")
     else:
         print("please provide a handler protocol name")
